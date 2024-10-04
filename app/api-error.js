@@ -1,9 +1,9 @@
-class ApiError extends Error {
-  constructor(statusCode, message){
-    super()
-    this.statusCode = statusCode
-    this.message = message
-  }
+class ApiError {
+    constructor(status, message) {
+        this.message = message;
+        this.status = status;
+        console.log(message)
+    }
 }
 
-module.exports = ApiError
+module.exports = ApiError;
